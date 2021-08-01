@@ -10,7 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor  //기본 생성자 자동 추가 public Posts(){}
 @Entity     //실제 DB테이블과 매칭될 클래스
             //디비의 언더스코어 네이밍을 클래스의 카멜로 매칭 (sales_manager -> SalesManager)
-public class Posts extends BaseTimeEntity {
+public class Posts {
 
     @Id     //테이블의 PK
     @GeneratedValue(strategy = GenerationType.IDENTITY)     //PK의 생성규칙, GenerationType.IDENTITY옵션은 AI
